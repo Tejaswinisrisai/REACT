@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Program in React course - session 1 - with using react</title>
+</head>
+
+<body>
+    <div id="onCallingId"> Not Rendered
+        <div id="title"></div>
+    </div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        const h1 = React.createElement("h1", {}, "Injected this Text through React Code")
+        // const h1 = React.createElement(["h1", "h2"], {
+        //     id: "title"
+        // }, ["Injected this Text through React Code", "H2 TEXT"])
+        // console.log(h1)
+        const root = ReactDOM.createRoot(document.getElementById("onCallingId"))
+        root.render(h1)
+    </script>
+</body>
+
+</html>

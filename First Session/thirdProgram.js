@@ -1,0 +1,5 @@
+const H1 = React.createElement("h1", { id: "h1", class: "classh1" }, "HELLOOOOO....!")
+const H2 = React.createElement("h2", {}, "HIIIIIIII....!")
+const H3 = React.createElement("h3", {}, "BYE BYEEE....!")
+const root = ReactDOM.createRoot(document.getElementById("container"))
+root.render([H1, H2, H3])

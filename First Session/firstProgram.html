@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Program in React course - session 1 - without using react</title>
+</head>
+
+<body>
+    <div id="root">
+        <!-- Hello Hi Bye Bye -->
+    </div>
+    <script>
+        const head = document.createElement("h1") // creating tag
+        head.innerHTML = "Text is assgined to div through Id" //passing text to tag
+        const getId = document.getElementById("root")// calling id
+        getId.appendChild(head);// appending text in the h1 tag created using id in the div
+    </script>
+
+</body>
+
+</html>
