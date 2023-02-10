@@ -1,0 +1,7 @@
+
+
+Creating Element in React => const var_name = React.createElement('tagName', {obj/props}, "Text that we wanted to push to the created element/tag")
+
+Creating a root element => const root_variable_name = ReactDOM.createRoot(document.getElementById("id_name"))
+
+Render the Root => root.render(var_name) => which means we are telling the root_variable_name to execute the created element/tag inside the rendered Id/class.
